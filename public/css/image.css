@@ -1,0 +1,46 @@
+.image-container {
+    width: 1000px; /* Lebar kontainer tetap */
+    height: 300px; /* Tinggi kontainer */
+    overflow: hidden; /* Memotong bagian gambar yang tidak muat di dalam kontainer */
+    position: relative; /* Untuk memastikan posisi relatif gambar */
+    display: flex;
+    justify-content: center; /* Memposisikan gambar secara horizontal di tengah */
+    align-items: center; /* Memposisikan gambar secara vertikal di tengah */
+}
+
+.image-container img {
+    width: 20%; /* Lebar gambar mengisi kontainer */
+    height: 100%; /* Menyesuaikan tinggi kontainer */
+    object-fit: cover; /* Memastikan gambar terpotong secara vertikal tanpa distorsi */
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transisi halus untuk lebar dan transformasi */
+    display: block; /* Menghilangkan ruang kosong di bawah gambar (default inline-block behavior) */
+}
+
+.image-container img:hover {
+    width: 70%; /* Gambar melebar saat di-hover */
+    transform: scale(1.5); /* Efek perbesaran saat di-hover */
+}
+
+.image-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
