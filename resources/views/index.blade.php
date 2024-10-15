@@ -7,13 +7,14 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>SB Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    {{-- <link rel="stylesheet" href="{{ asset('css/image.css')}}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <style>
     a:hover{
         color: lightgray;
     }
 </style>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -50,6 +51,30 @@
         </div>
     </nav>
 
+    <div class="slider-container" style="padding-bottom: 20px">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        
+        <div class="slider">
+            <div class="slide">
+                <a href="/home">
+                    <img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="Promo Image 1">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="/home">
+                    <img src="{{ asset('Storage/Game/Pubg.jpg') }}" alt="Promo Image 2">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="/home">
+                    <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Promo Image 3">
+                </a>
+            </div>
+        </div>
+        
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
     {{-- Title --}}
     <div class="container">
         <div class="row">
@@ -68,17 +93,17 @@
     {{-- Content --}}
     <div class="container pt-5">
         <div class="row">
-            <div class="col-sm-3">
-                <a href="/ml"><img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="ML Logo" width="300px"></a>
+            <div class="col-md-3">
+                <a href="/ml"><img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="ML Logo" width="250px"></a>
             </div>
-            <div class="col-sm-3">
-                <a href="/pubg"><img src="{{ asset('Storage/Game/Pubg.jpeg') }}" alt="PUBG Logo" width="300px"></a>
+            <div class="col-md-3">
+                <a href="/pubg"><img src="{{ asset('Storage/Game/Pubg.jpeg') }}" alt="PUBG Logo" width="250px"></a>
             </div>
-            <div class="col-sm-3">
-                <img src="{{ asset('Storage/Game/Hok.jpg') }}" alt="Hok Logo" width="300px">
+            <div class="col-md-3">
+                <img src="{{ asset('Storage/Game/Hok.jpg') }}" alt="Hok Logo" width="250px">
             </div>
-            <div class="col-sm-3">
-                <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Valo Logo" width="300px">
+            <div class="col-md-3">
+                <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Valo Logo" width="250px">
             </div>
         </div>
         <div class="row">
@@ -101,3 +126,34 @@
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> --}}
 </body>
 </html>
+
+<script>
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const slider = document.querySelector('.slider');
+    
+    // Update currentSlide
+    currentSlide += direction;
+
+    // Jika melebihi batas, kembali ke slide pertama atau terakhir
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+
+    // Geser slider dengan transform
+    const slideWidth = slides[0].clientWidth; // Dapatkan lebar slide
+    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`; // Geser ke slide yang diinginkan
+}
+
+// Set slide pertama sebagai aktif saat pertama kali load
+document.addEventListener('DOMContentLoaded', () => {
+    moveSlide(0); // Set slide awal
+});
+
+
+</script>

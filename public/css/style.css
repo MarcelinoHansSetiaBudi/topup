@@ -1,0 +1,58 @@
+.slider-container {
+    position: relative;
+    width: 100%; /* Sesuaikan slider dengan lebar layar */
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; /* Sembunyikan gambar di luar kontainer */
+}
+
+.slider {
+    display: flex; /* Membuat gambar berjejer */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; /* Mengatur lebar slide sama dengan lebar kontainer */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%; /* Gambar mengikuti lebar kontainer */
+    height: auto; /* Menjaga proporsi gambar */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%; /* Posisi tombol di tengah secara vertikal */
+    transform: translateY(
+        -50%
+    ); /* Memastikan tombol benar-benar berada di tengah */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna background semi-transparan */
+    color: white;
+    border: none;
+    padding: 15px; /* Ubah padding untuk membuat tombol lebih besar */
+    cursor: pointer;
+    z-index: 1;
+    font-size: 24px; /* Ukuran font lebih besar agar lebih jelas */
+    border-radius: 50%; /* Membuat tombol menjadi bulat */
+    width: 50px; /* Atur lebar tombol */
+    height: 50px; /* Atur tinggi tombol */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Ubah warna saat dihover */
+}
+
+.prev {
+    left: 10px; /* Tempatkan di sisi kiri */
+}
+
+.next {
+    right: 10px; /* Tempatkan di sisi kanan */
+}
