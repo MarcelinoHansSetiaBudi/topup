@@ -50,59 +50,57 @@
             </div>
         </div>
     </nav>
-
-    <div class="slider-container" style="padding-bottom: 20px">
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        
-        <div class="slider">
-            <div class="slide">
-                <a href="/home">
-                    <img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="Promo Image 1">
-                </a>
+<section style="background-color: #242a2e">
+    <div class="container" >
+        <div class="slider-container" style="padding-bottom: 20px;">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            
+            <div class="slider">
+                <div class="slide">
+                    <a href="/">
+                        <img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="Promo Image 1" style="border-radius: 50px">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="/">
+                        <img src="{{ asset('Storage/Game/Pubg.jpg') }}" alt="Promo Image 2">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="/">
+                        <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Promo Image 3">
+                    </a>
+                </div>
             </div>
-            <div class="slide">
-                <a href="/home">
-                    <img src="{{ asset('Storage/Game/Pubg.jpg') }}" alt="Promo Image 2">
-                </a>
-            </div>
-            <div class="slide">
-                <a href="/home">
-                    <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Promo Image 3">
-                </a>
-            </div>
+            
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
-        
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
+</section>   
     
-    {{-- Title --}}
-    <div class="container">
+    {{-- Content --}}
+    <div class="container" style="padding-top: 10px">
         <div class="row">
-            <div class="col text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-                <h1>Welcome to SB Store</h1>
-            </div>
-        </div>  
-        <div class="row">
-            <div class="col text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-                <h2>100% RESMI, TERPERCAYA, GARANSI, & ORI</h2>
+            <div class="col fw-bold"><img src="{{ asset('Storage/Logo/fire.jpg') }}" alt="fire" width="20px"> POPULER SEKARANG! </div>
+        </div>
+        <div class="row" style="padding-bottom: 30px; font-size: 10pt">
+            <div class="col">
+                Berikut adalah beberapa product yang paling populer saat ini.
             </div>
         </div>
-    </div>
-    {{-- Akhir Title --}}
-
-    {{-- Content --}}
-    <div class="container pt-5">
         <div class="row">
-            <div class="col-md-3">
-                <a href="/ml"><img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="ML Logo" width="250px"></a>
+            <div class="col-sm-4">
+                <a href="/ml"><img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="ML Logo" width="250px" style="border-radius: 8px"></a>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-4">
                 <a href="/pubg"><img src="{{ asset('Storage/Game/Pubg.jpeg') }}" alt="PUBG Logo" width="250px"></a>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-4">
                 <img src="{{ asset('Storage/Game/Hok.jpg') }}" alt="Hok Logo" width="250px">
             </div>
-            <div class="col-md-3">
+        </div>
+        <div class="row">
+            <div class="col-md-4">
                 <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Valo Logo" width="250px">
             </div>
         </div>
@@ -122,7 +120,27 @@
         </div>
     </div>
     {{-- Akhir Content --}}
+
+    {{-- Store Name Logo --}}
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <h1>Welcome to SB Store</h1>
+            </div>
+        </div>  
+    </div>
+    {{-- Akhir Store Name Logo --}}
     
+    {{-- Penjelasan Store --}}
+    <div class="container" style="padding-top: 30px;">
+        <div class="row">
+            <div class="col-sm-3">
+                SB Store merupakan sebuah platform top up game yang 100% RESMI, TERPERCAYA, GARANSI, & ORI. Proses cepat 1 - 3 detik. Jika terdapat kendala lebih lanjut silakan klik button chat CS untuk berkonsultasi lebih lanjut.
+            </div>
+        </div>
+    </div>
+    {{-- Akhir Penjelasan Store --}}
+
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> --}}
 </body>
 </html>
