@@ -131,13 +131,46 @@
     </div>
     {{-- Akhir Store Name Logo --}}
     
-    {{-- Penjelasan Store --}}
-    <div class="container" style="padding-top: 30px;">
+    {{-- Logo Kecil --}}
+    <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col">
+                <img src="{{ asset('Storage/Logo/SB%20Store%20Logo.png')}}" alt="SB store" width="50px">&nbsp;&nbsp; SB Store
+            </div>
+        </div>
+    </div>
+    {{-- Akhir Logo Kecil --}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-2" style="padding-left: 15px">Peta Situs</div>
+            <div class="col-sm-2" style="padding-left: 15px">Dukungan</div>
+            <div class="col-sm-2" style="padding-left: 15px">Legalitas</div>
+        </div>
+    </div>
+    {{-- Penjelasan Store --}}
+    <div class="container" style="padding-top: 10px;">
+        <div class="row-md-4">
+            <div class="col-sm-4" style="padding-right: 40px">
                 SB Store merupakan sebuah platform top up game yang 100% RESMI, TERPERCAYA, GARANSI, & ORI. Proses cepat 1 - 3 detik. Jika terdapat kendala lebih lanjut silakan klik button chat CS untuk berkonsultasi lebih lanjut.
             </div>
         </div>
+        {{-- <div class="row-md-2">
+            <div class="col-sm-2"><a href="/">Beranda</a></div>
+            <div class="col-sm-2"><a href="/">Whatsapp</a></div>
+            <div class="col-sm-2"><a href="/">Kebijakan Pribadi</a></div>
+        </div>
+        <div class="row-md-2">
+            <div class="col-sm-2"><a href="/">Hubungi Kami</a></div>
+            <div class="col-sm-2"><a href="/">Instagram</a></div>
+            <div class="col-sm-2"><a href="/">Syarat & Ketentuan</a></div>
+        </div>
+        <div class="row-md-2">
+            <div class="col-sm-2"><a href="/">Ulasan</a></div>
+            <div class="col-sm-2"><a href="/">Email</a></div>
+            <div class="col-sm-2"><a href="/"></a></div>
+        </div> --}}
     </div>
     {{-- Akhir Penjelasan Store --}}
 
