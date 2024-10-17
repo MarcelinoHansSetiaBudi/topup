@@ -63,12 +63,12 @@
                 </div>
                 <div class="slide">
                     <a href="/">
-                        <img src="{{ asset('Storage/Game/Pubg.jpg') }}" alt="Promo Image 2">
+                        <img src="{{ asset('Storage/Game/Pubg.jpg') }}" alt="Promo Image 2" style="border-radius: 50px">
                     </a>
                 </div>
                 <div class="slide">
                     <a href="/">
-                        <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Promo Image 3">
+                        <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Promo Image 3" style="border-radius: 50px">
                     </a>
                 </div>
             </div>
@@ -89,14 +89,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 text-center">
                 <a href="/ml"><img src="{{ asset('Storage/Game/ML%20Chou.jpeg') }}" alt="ML Logo" width="250px" style="border-radius: 8px"></a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 text-center">
                 <a href="/pubg"><img src="{{ asset('Storage/Game/Pubg.jpeg') }}" alt="PUBG Logo" width="250px"></a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 text-center">
                 <img src="{{ asset('Storage/Game/Hok.jpg') }}" alt="Hok Logo" width="250px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <a href="/ml" style="text-decoration: none; color: white;"><p>Mobile Legend</p></a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a href="/pubg" style="text-decoration: none; color: white;"><p>PUBG MOBILE</p></a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <p>Honor of Kings</p>
             </div>
         </div>
         <div class="row">
@@ -105,15 +116,6 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 text-center">
-                <a href="/ml" style="text-decoration: none; color: white;"><p>Mobile Legend</p></a>
-            </div>
-            <div class="col-sm-3 text-center">
-                <a href="/pubg" style="text-decoration: none; color: white;"><p>PUBG MOBILE</p></a>
-            </div>
-            <div class="col-sm-3 text-center">
-                <p>Honor of Kings</p>
-            </div>
             <div class="col-sm-3 text-center">
                 <p>Valorant</p>
             </div>
@@ -151,26 +153,35 @@
     </div>
     {{-- Penjelasan Store --}}
     <div class="container" style="padding-top: 10px;">
-        <div class="row-md-4">
-            <div class="col-sm-4" style="padding-right: 40px">
-                SB Store merupakan sebuah platform top up game yang 100% RESMI, TERPERCAYA, GARANSI, & ORI. Proses cepat 1 - 3 detik. Jika terdapat kendala lebih lanjut silakan klik button chat CS untuk berkonsultasi lebih lanjut.
+        <div class="row">
+            <div class="col-sm-4" style="padding-right: 30px">
+                SB Store merupakan sebuah platform top up
+            </div>
+            <div class="col-sm-2" style="padding-bottom: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Beranda</a></div>
+            <div class="col-sm-2" style="padding-bottom: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Whatsapp</a></div>
+            <div class="col-sm-2" style="padding-bottom: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Kebijakan Pribadi</a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="padding-right: 30px">
+                game yang 100% RESMI, TERPERCAYA,& ORI. 
+            </div>
+            <div class="col-sm-2" style="padding-top: 7.5px; padding-bottom: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Hubungi Kami</a></div>
+            <div class="col-sm-2" style="padding-top: 7.5px; padding-bottom: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Instagram</a></div>
+            <div class="col-sm-2" style="padding-top: 7.5px; padding-bottom: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Syarat & Ketentuan</a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="padding-right: 30px;">
+                Proses cepat 1 - 3 detik. Jika terdapat kendala
+            </div>
+            <div class="col-sm-2" style="padding-top: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Ulasan</a></div>
+            <div class="col-sm-2" style="padding-top: 7.5px;"><a href="/" style="text-decoration: none; color: white;">Email</a></div>
+            <div class="col-sm-2" style="padding-top: 7.5px;"><a href="/" style="text-decoration: none; color: white;"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                lebih lanjut silakan klik button chat CS untuk berkonsultasi lebih lanjut.
             </div>
         </div>
-        {{-- <div class="row-md-2">
-            <div class="col-sm-2"><a href="/">Beranda</a></div>
-            <div class="col-sm-2"><a href="/">Whatsapp</a></div>
-            <div class="col-sm-2"><a href="/">Kebijakan Pribadi</a></div>
-        </div>
-        <div class="row-md-2">
-            <div class="col-sm-2"><a href="/">Hubungi Kami</a></div>
-            <div class="col-sm-2"><a href="/">Instagram</a></div>
-            <div class="col-sm-2"><a href="/">Syarat & Ketentuan</a></div>
-        </div>
-        <div class="row-md-2">
-            <div class="col-sm-2"><a href="/">Ulasan</a></div>
-            <div class="col-sm-2"><a href="/">Email</a></div>
-            <div class="col-sm-2"><a href="/"></a></div>
-        </div> --}}
     </div>
     {{-- Akhir Penjelasan Store --}}
 
