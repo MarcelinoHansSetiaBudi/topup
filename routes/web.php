@@ -23,3 +23,6 @@ Route::get('/ml', function () {
 Route::get('/pubg', function () {
     return view('pubg');
 });
+Route::get('/hok', function () {
+    return view('hok');
+});

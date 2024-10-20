@@ -96,7 +96,7 @@
                 <a href="/pubg"><img src="{{ asset('Storage/Game/Pubg.jpeg') }}" alt="PUBG Logo" width="250px"></a>
             </div>
             <div class="col-sm-4 text-center">
-                <img src="{{ asset('Storage/Game/Hok.jpg') }}" alt="Hok Logo" width="250px">
+                <a href="/hok"><img src="{{ asset('Storage/Game/Hok.jpg') }}" alt="Hok Logo" width="250px"></a>
             </div>
         </div>
         <div class="row">
@@ -111,12 +111,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4 text-center">
                 <img src="{{ asset('Storage/Game/VALORANT.jpg') }}" alt="Valo Logo" width="250px">
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 text-center">
+            <div class="col-sm-4 text-center">
                 <p>Valorant</p>
             </div>
         </div>
@@ -124,17 +124,19 @@
     {{-- Akhir Content --}}
 
     {{-- Store Name Logo --}}
-    <div class="container" style="padding-top: 20px;">
-        <div class="row">
-            <div class="col text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
-                <h1>Welcome to SB Store</h1>
-            </div>
-        </div>  
-    </div>
+    <section style="background: gray; color: white;">
+        <div class="container" style="padding-top: 20px;">
+            <div class="row">
+                <div class="col text-center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                    <h1>Welcome to SB Store</h1>
+                </div>
+            </div>  
+        </div>
+    </section>
     {{-- Akhir Store Name Logo --}}
     
     {{-- Logo Kecil --}}
-    <div class="container">
+    <div class="container" style="margin-top: 10px; padding-top: 10px">
         <div class="row">
             <div class="col">
                 <img src="{{ asset('Storage/Logo/SB%20Store%20Logo.png')}}" alt="SB store" width="50px">&nbsp;&nbsp; SB Store
